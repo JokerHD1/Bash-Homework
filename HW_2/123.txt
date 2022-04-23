@@ -1,0 +1,2 @@
+tail -F anything_1.txt | grep --line-buffered 17: | cat >> names.txt
+Get-Content C:\Testing\names.txt -wait
