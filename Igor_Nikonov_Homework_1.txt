@@ -1,0 +1,86 @@
+1. pwd #посмотреть, где я
+
+2. mkdir DIR #создать папку
+
+3. cd DIR #зайти в папку
+
+4. mkdir DIR1 DIR2 DIR3 #создать 3 папки
+
+5. cd DIR3 #зайти в любую папку
+
+6. touch txt1.txt txt2.txt txt3.txt json1.json json2.json #создать 5 файлов (3 txt, 2 json)
+
+7. mkdir DIR_1 DIR_2 DIR_3 #создать 3 папки
+
+8. ls -l #вывести список содержимого папки
+
+9. nano txt1.txt #открыть любой txt файл
+
+10. the quick brown fox
+jumps over 
+the lazy dog
+#написать туда что-нибудь, любой текст
+
+11. ctrl+x y enter #сохранить и выйти
+
+12. cd .. #выйти из папки на уровень выше
+
+13. mv DIR3/json1.json DIR2/json1.json && mv DIR3/json2.json DIR2/json2.json #переместить любые 2 файла, которые вы создали, в любую другую папку
+
+14. cp DIR3/txt1.txt DIR2/txt1.txt && cp DIR3/txt2.txt DIR2/txt2.txt #скопировать любые 2 файла, которые вы создали, в любую другую папку
+
+15. find -name "txt3.*" #найти файл по имени
+
+16. grep "fox" DIR2/txt1.txt Ctrl+c #просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+
+17. head -2 DIR2/txt1.txt #вывести несколько первых строк из текстового файла (2)
+
+18. tail -2 DIR2/txt1.txt #вывести несколько первых строк из текстового файла (2)
+
+19. less DIR2/txt1.txt #просмотреть содержимое длинного файла (команда less), изучить как она работает
+    q
+
+20. date #вывести дату и время
+
+
+Задания со звездочкой
+
+1. Запрос: curl "http://162.55.220.72:5005/terminal-hw-request"
+
+   Ответ:
+
+    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0    456      0 --:--:-- --:--:-- --:--:--   456{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+ 
+   
+   Запрос: curl "http://162.55.220.72:5005/get_method?name=Igor&age=24"
+
+Ответ:
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    14  100    14    0     0     26      0 --:--:-- --:--:-- --:--:--    26["Igor","24"]
+
+
+2. touch script_demo.sh
+   nano script_demo.sh
+   #! /bin/bash
+   cd DIR
+   mkdir DIR{1..3}
+   cd DIR3
+   touch TXT{1..3}.txt JSON{1..2}.json
+   mkdir DIR_{1..3}
+   ls -l
+   cd..
+   mv DIR3/{TXT1.txt,JSON1.json} DIR1
+   ctrl+x y ENTER
+   chmod +x script_demo.sh
+   ./script_demo.ch
+
+  
+   
+   
+
+
+
+
