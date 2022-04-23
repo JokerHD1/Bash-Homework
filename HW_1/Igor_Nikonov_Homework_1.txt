@@ -45,7 +45,9 @@ the lazy dog
 
 Задания со звездочкой
 
-1. Запрос: curl "http://162.55.220.72:5005/terminal-hw-request"
+1. #Отправить http запрос на сервер http://162.55.220.72:5005/terminal-hw-request
+
+Запрос: curl "http://162.55.220.72:5005/terminal-hw-request"
 
    Ответ:
 
@@ -62,7 +64,9 @@ the lazy dog
 100    14  100    14    0     0     26      0 --:--:-- --:--:-- --:--:--    26["Igor","24"]
 
 
-2. touch script_demo.sh
+2. #Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+touch script_demo.sh
    nano script_demo.sh
    #! /bin/bash
    cd DIR
